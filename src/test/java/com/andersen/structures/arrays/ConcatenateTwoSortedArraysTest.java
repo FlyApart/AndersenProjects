@@ -3,7 +3,6 @@ package com.andersen.structures.arrays;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
 public class ConcatenateTwoSortedArraysTest {
 

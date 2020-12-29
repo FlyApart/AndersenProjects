@@ -2,6 +2,12 @@ package com.andersen.structures.arrays;
 
 public class ConcatenateTwoSortedArrays {
 
+    /**
+     * Method joins 2 sorted arrays
+     * @param arrA - first array
+     * @param arrB - second array
+     * @return - resulting sorted array
+     */
     public int[] combine(int[] arrA, int[] arrB){
         int[] sumArray = new int[arrA.length + arrB.length];
         int positionA = 0;
