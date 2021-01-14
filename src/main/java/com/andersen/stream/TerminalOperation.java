@@ -15,7 +15,6 @@ public class TerminalOperation {
     }
 
     public double averageAgeUsers(List<Person> persons){
-        return persons.stream().mapToInt(Person::getAge).average().orElse(0);
+        return persons.stream().mapToInt(Person::getAge).max().orElse(0);
     }
-
 }

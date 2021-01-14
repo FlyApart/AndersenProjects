@@ -6,6 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -54,16 +55,8 @@ public class ConveyorOperationsTest {
 
     @Test
     public void sortUsersArray() {
-        List<Person> sortedList = new ArrayList<>();
-        sortedList.add(new Person("Alex", 24, Gender.MALE));
-        sortedList.add(new Person("Denis", 27, Gender.MALE));
-        sortedList.add(new Person("Katya", 50, Gender.FEMALE));
-        sortedList.add(new Person("Masha", 20, Gender.FEMALE));
-        sortedList.add(new Person("Oleg", 5, Gender.MALE));
-        sortedList.add(new Person("Olga", 10, Gender.FEMALE));
-        sortedList.add(new Person("Ura", 22, Gender.MALE));
-        sortedList.add(new Person("Ura", 22, Gender.MALE));
-
+        List<Person> sortedList = new ArrayList<>(persons);
+        Collections.sort(sortedList);
         assertEquals(sortedList, task.sortUsersArray(persons));
     }
 
